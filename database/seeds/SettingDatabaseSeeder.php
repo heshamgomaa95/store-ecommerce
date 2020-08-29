@@ -26,9 +26,9 @@ class SettingDatabaseSeeder extends Seeder
             'free_shipping_cost'=>0,
             'translatable'=>[
                 'store_name'=>'Hesham Store',
-                'free_shipping_label'=>'Free Shipping',
-                'local_label'=>'Local shipping',
-                'outer_label'=>'outer shipping',
+                'free_shipping_label'=>'توصيل مجانى',
+                'local_label'=>'توصيل داخلى',
+                'outer_label'=>'توصيل خارجى',
             ]
         ]);
     }
