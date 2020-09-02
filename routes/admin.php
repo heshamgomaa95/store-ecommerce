@@ -30,6 +30,13 @@ Route::group([
             Route::put('shipping-methods/{id}', 'SettingsController@UpdateShippingMethods')->name('update.shipping.methods');
 
         });
+
+        Route::group(['prefix' => 'profile'], function () {
+            Route::get('edit', 'ProfileController@EditProfile')->name('edit.profile');
+            Route::put('update', 'ProfileController@UpdateProfile')->name('update.profile');
+
+        });
+
     });
 
 
