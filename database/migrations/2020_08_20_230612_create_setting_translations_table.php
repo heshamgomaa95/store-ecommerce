@@ -18,7 +18,6 @@ class CreateSettingTranslationsTable extends Migration
             $table->integer('setting_id')->unsigned(); //عشان مش هشيل 0 او 1-
             $table->string('locale');
             $table->longText('value')->nullable();
-
             $table->unique(['setting_id','locale']);
             $table->foreign('setting_id')->references('id')->on('settings')->onDelete('cascade');
 
